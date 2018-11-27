@@ -11,15 +11,43 @@ Sample: [tutorial/sample.md][1]
 同时spiders和crawlList文件夹中都有足够多的示例方便用户理解使用方法。
 
 - Run `scrapy crawl general`
-
 ##Options:
-
 - `-a name=` 爬虫名称,路径为crawlList/{name}.py
 - `-a mode=` 0 - 增量抓取 1 - 全量抓取 99 - 测试模式
 - `-a increment_date=` 当指定为增量抓取时，从此日期开始抓取（如不指定默认以当日作为increment_date）
 
-注意：
-1. 测试模式只在`GeneralNewsSpider.parse_content`方法完整执行时会控制只返回一条完整数据，您可以用sample中的爬虫执行一次
+测试模式样例：
+`> scrapy crawl general -a name=shandong_binzhou_gsp -a mode=99`
+```
+2018-11-27 20:59:37 [root] WARNING: Run in TEST/PART-CRAWL Mode!
+2018-11-27 20:59:37 [root] WARNING:
+Content URL: http://sy.binzhou.gov.cn/zhengwu/class/?0.html&page=1&showtj=&showhot=&author=&key=&code=
+
+2018-11-27 20:59:38 [root] WARNING:
+Count:15 articles per content page
+
+2018-11-27 20:59:38 [root] WARNING:
+Article URL:http://sy.binzhou.gov.cn/zhengwu/html/?4204.html
+
+2018-11-27 20:59:38 [root] WARNING:
+Article Date:2018-11-26,[u'2018-11-26']
+
+2018-11-27 20:59:39 [root] WARNING:
+Article Title:2018年滨州市食品生产环节市级监督抽检合格产品信息
+
+2018-11-27 20:59:39 [root] WARNING:
+Article Text:
+
+            	来源:市食品药品监督管理局  时间:2018-11-26 15:53  浏览量:30
+
+
+
+                    2018年滨州市食品生产环节市级监督抽检合格产品信息
+                    附件:2018年滨州市食品生产环...
+
+2018-11-27 20:59:39 [root] WARNING: Article Attachment:http://sy.binzhou.gov.cn#
+2018-11-27 20:59:39 [root] WARNING: Article Attachment:http://sy.binzhou.gov.cn/uploads/attachments/20181126/2018年滨州市食品生产环节市级监督抽检合格产品信息.xlsx
+```
 
 # Documentation
 on the way...
