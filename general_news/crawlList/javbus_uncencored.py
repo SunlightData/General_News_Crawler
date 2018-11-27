@@ -9,10 +9,6 @@ from general_news.crawlList.base import newsBase
 # DONE
 
 class news(newsBase):
-    '''
-    国家市场监督管理总局
-    首页》新闻》要闻》文件发布
-    '''
 
     def __init__(self):
         newsBase.__init__(self)
