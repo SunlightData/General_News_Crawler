@@ -11,10 +11,10 @@ Sample: [tutorial/sample.md][1]
 同时spiders和crawlList文件夹中都有足够多的示例方便用户理解使用方法。
 
 - Run `scrapy crawl general`
-Options:
-`-a name=` 爬虫名称,路径为crawlList/{name}.py
-`-a mode=` 0 - 增量抓取 1 - 全量抓取 99 - 测试模式
-`-a increment_date=` 当指定为增量抓取时，从此日期开始抓取（如不指定默认以当日作为increment_date）
+##Options:
+- `-a name=` 爬虫名称,路径为crawlList/{name}.py
+- `-a mode=` 0 - 增量抓取 1 - 全量抓取 99 - 测试模式
+- `-a increment_date=` 当指定为增量抓取时，从此日期开始抓取（如不指定默认以当日作为increment_date）
 
 # Documentation
 on the way...
