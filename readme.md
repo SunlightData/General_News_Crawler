@@ -7,7 +7,7 @@ General_news_spider是一个scrapy实现的通用内容抓取模板，这里的*
 借助xpath将内容解析部分通用化，同时根据通用的`日期格式`实现了增量抓取，借助`FilesPipeline`实现了附件下载，同时在spider内部增加了测试功能，方便用户判断xpath出错等问题。
 
 # How to use?
-Sample: `tutorial/sample.md`
+Sample: [tutorial/sample.md][1]
 同时spiders和crawlList文件夹中都有足够多的示例方便用户理解使用方法。
 
 - Run `scrapy crawl general`
@@ -21,4 +21,4 @@ on the way...
 
 
 
-
+  [1]: https://github.com/SunlightData/General_News_Crawler/blob/master/tutorial/sample.md
